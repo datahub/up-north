@@ -1,0 +1,9 @@
+.DS_Store
+*.pyc
+node_modules
+frontend/src/data/*
+!frontend/src/data/Makefile
+!frontend/src/data/locations.csv
+!frontend/src/data/bbox.json
+frontend/dist/*
+!frontend/dist/index.html

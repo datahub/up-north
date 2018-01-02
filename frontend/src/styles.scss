@@ -1,0 +1,225 @@
+$up-north-color: #49796B;
+
+#up-north-quiz {
+    font-family: 'Futura Today';
+    color: #434343;
+    max-width: 500px;
+    width: 100%;
+    text-align: left;
+}
+
+.hed {
+    font-size: 28px;
+    font-family: 'Futura Today Bold';
+    margin-bottom: 18px;
+}
+
+.map {
+    cursor: pointer;
+    background-color: #ecf7fd;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    width: 100%;
+}
+
+svg text {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+svg text::selection {
+    background: none;
+}
+
+.step-marker {
+    display: inline-block;
+    text-align: center;
+    width: 21px;
+    height: 21px;
+    font-size: 15px;
+    background: #a93816;
+    color: #fff;
+    border-radius: 12px;
+    margin-right: 5px;
+}
+
+.step {
+    font-size: 18px;
+}
+
+.step--1 {
+    margin-bottom: 10px;
+}
+
+.step--2 {
+    margin-bottom: 15px;
+    .select-container {
+        display: inline-block;
+        margin-left: 3px;
+    }
+}
+
+#submit-choice {
+    font-size: 18px;
+    color: inherit;
+    cursor: pointer;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 3px 8px;
+    background: transparent;
+}
+#submit-choice:hover {
+    background-color: #fcfcfc;
+}
+#submit-choice.disabled {
+    color: #ccc;
+    border-color: #ccc;
+    cursor: not-allowed;
+    outline: none;
+}
+#submit-choice.disabled:hover {
+    background-color: inherit;
+}
+
+.states {
+    fill: #fcf9f3;
+    stroke: #ccc;
+}
+
+.wisconsin {
+    fill: #fefefe;
+    stroke: #999;
+}
+
+.wisconsin--border {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}
+
+.highways {
+    fill: none;
+    stroke: #ccc;
+}
+
+.cities {
+    text {
+        font-size: 13px;
+        text-anchor: middle;
+        fill: #999;
+        pointer-events: none;
+        text-shadow: -1px  0px 1px #fff, 
+                  0px  1px 1px #fff,
+                  1px  0px 1px #fff, 
+                  0px -1px 1px #fff;
+    }
+}
+
+.highway-symbol {
+    opacity: 0.5;
+}
+
+#choice-arrow {
+    fill: #444;
+}
+
+#choice-arrow-underlying {
+    fill: #fff;
+}
+
+.up-north {
+    .area {
+        fill: lighten($up-north-color, 20);
+        fill-opacity: 0.075;
+    }
+
+    .border {
+        fill: none;
+        stroke: $up-north-color;
+        stroke-width: 3px;
+    }
+
+    .border--with-results {
+        stroke-width: 3px;
+        stroke: #795548;
+    }
+
+    .border--underlying {
+        stroke: #eee;
+        stroke-width: 4.5px;
+    }
+
+    .point {
+        fill: $up-north-color;
+    }
+
+    .title {
+        font-family: 'Futura Today Bold';
+        font-size: 50px;
+        text-anchor: middle;
+        fill: $up-north-color;
+        opacity: 0.2;
+    }
+
+    .choice-marker {
+        line {
+            stroke: #444;
+            stroke-width: 2px;
+        }
+
+        line.underlying {
+            stroke: #fff;
+            stroke-width: 3px;
+        }
+
+        text {
+            font-family: 'Futura Today Bold';
+            fill: #444;
+            text-anchor: end;
+            text-shadow: -1px  0px 3px #fff, 
+                        0px  1px 3px #fff,
+                        1px  0px 3px #fff, 
+                        0px -1px 3px #fff;
+        }
+    }
+}
+
+.legend {
+    margin-bottom: 10px;
+    .legend-title {
+        font-size: 15px;
+        font-family: 'Futura Today DemiBold';
+        margin-bottom: 6px;
+    }
+
+    .axis {
+        font-family: 'Futura Today';
+        font-size: 12px;
+        .domain {
+            display: none;
+        }
+    }
+
+    #arrow {
+        fill: #444;
+    }
+    .arrow {
+        line {
+            stroke: #444;
+        }
+        text {
+            font-size: 14px;
+        }
+    }
+}
+
+.thanks-message {
+    font-size: 20px;
+    color: #666;
+}
+
+.hidden {
+    display: none;
+}

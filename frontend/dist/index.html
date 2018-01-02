@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/shared/css/font.futura-today.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div style="max-width: 450px; margin: 20px auto;">
+        <div id="up-north-quiz">
+            <div class="hed">
+                Where's "up north" to you?
+            </div>
+            <div class="step step--1">
+                <span class="step-marker">1</span> Click and drag to draw the line where "up north" begins.
+            </div>
+            <div class="legend hidden">
+                <div class="legend-title">
+                    Percent of readers who consider this area "up north"
+                </div>
+                <svg class="legend-scale"></svg>
+            </div>
+            <svg class="map"></svg>
+            <div class="step step--2">
+                <span class="step-marker">2</span>
+                Tell us where you're from <span style="font-family:'Futura Today Bold'">&#8250;</span>
+                <div class="select-container">
+                    <select id="location-select" class="selectpicker"></select>
+                </div>
+            </div>
+            <div class="step step--3">
+                <span class="step-marker">3</span>
+                <button id="submit-choice" class="disabled">Submit your choice</button> and see what others think.
+            </div>
+            
+            <div class="thanks-message hidden">
+                Thanks for your response! Here's what other readers think.
+            </div>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>
