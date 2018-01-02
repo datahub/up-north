@@ -59,6 +59,7 @@ Here's a summary of the commands:
   1. creates an "up north" polygon for each reader's response
   2. burns all of these polygons into a raster
     * `gdal.RasterizeLayer(raster, [1], polygons, burn_values=[1], options=['MERGE_ALG=ADD'])`
+    * this creates a raster where if 56 polygons overlap in one spot, the value for that pixel will be 56
   3. write the aggregation raster to file as a GeoTIFF
 * `gdal_translate`: shrink the GeoTIFF to a more managable size
 * `node bin/colorize.js`: convert from 1-band sum values to 3-band color (white = few; green = many)
